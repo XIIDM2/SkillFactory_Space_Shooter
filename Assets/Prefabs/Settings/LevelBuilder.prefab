@@ -1,0 +1,155 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2294929755997352650
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6443267745308591228}
+  - component: {fileID: 650030626380581089}
+  m_Layer: 0
+  m_Name: LevelBuilder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6443267745308591228
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294929755997352650}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1259310586391836544}
+  - {fileID: 2832610941435407205}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &650030626380581089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294929755997352650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c1c74a1ae22d043b9052020f261a0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PlayerHUDPrefab: {fileID: 5952302507544210519, guid: e84bf1e73d5f9e549a38cc6ed542e584, type: 3}
+  m_LevelGUIPrefab: {fileID: 1450236428669493749, guid: d60e3fed7e14d72469a2074a33e597d0, type: 3}
+  m_BackGroundPrefab: {fileID: 6773281390295041335, guid: 3ac84368954fb8d4babdf9774dd2ae14, type: 3}
+  m_PlayerSpawner: {fileID: 4485140238786876508}
+  levelBoundary: {fileID: 0}
+  levelController: {fileID: 0}
+--- !u!1 &2544495605898807156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1259310586391836544}
+  - component: {fileID: 4485140238786876508}
+  m_Layer: 0
+  m_Name: PlayerSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1259310586391836544
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2544495605898807156}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6443267745308591228}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4485140238786876508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2544495605898807156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3abf6c3eb0301db4f9983f5b605aec44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FollowCameraPrefab: {fileID: 8912417536029370869, guid: 1d213ef2b3f94a848a20592e5d417dac, type: 3}
+  m_VirtualGamePadPrefab: {fileID: 700559298332021954, guid: c84dcf83764481247a87b670a3967ac2, type: 3}
+  m_ShipInputControllerPrefab: {fileID: 8312266409197915777, guid: 3c95333a117be24439b5d7b1d2d6f61e, type: 3}
+  m_PlayerPrefab: {fileID: 8521749088522439398, guid: 0f59a5fd2126d894aba22ebeac6ccdde, type: 3}
+  m_SpawnPoint: {fileID: 0}
+--- !u!1 &2820956550418341500
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2832610941435407205}
+  - component: {fileID: 2377186803356729424}
+  m_Layer: 0
+  m_Name: LevelController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2832610941435407205
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2820956550418341500}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6443267745308591228}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2377186803356729424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2820956550418341500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6a4861cf5a2f1f45ab978dc5471ed9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LevelConditions: []
+  m_LevelProperties: {fileID: 0}
+  LevelVictory:
+    m_PersistentCalls:
+      m_Calls: []
+  LevelDefeat:
+    m_PersistentCalls:
+      m_Calls: []
