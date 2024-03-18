@@ -1,2 +1,4 @@
 # SkillFactory_Space_Shooter
-Repository for SkillFactory Space Shooter Educational Project
+Данный репозиторий был создан в рамках [профессии C#-разработчик](https://skillfactory.ru/csharp) на платформе SkillFactory.
+
+## Repository for SkillFactory Space Shooter Educational Project
